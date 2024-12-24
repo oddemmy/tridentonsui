@@ -232,6 +232,7 @@ td{
 /* ROADMAP*/
 .roadmap{
     padding: 5%;
+      font-family: Arial, Helvetica, sans-serif;
 }
 .roadmap-header{
     font-size: 40px;
@@ -307,7 +308,7 @@ td{
     width: fit-content;
     display: flex;
     border-radius: 20px;
-    margin: auto;
+    margin: 3% auto;
     text-align: center;
     padding: 2%;
     font-size: 25px;
@@ -474,6 +475,7 @@ a{
     font-size: 23px;
   }
   .whitepaper-btn{
+      
     font-size: 25px;
   }
   .social-text h1{
