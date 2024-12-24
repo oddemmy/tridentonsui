@@ -1,0 +1,639 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#navimg{
+    width: 60px;
+    border-radius: 100%;
+}
+body{
+    background-color: #F0F8FF;
+}
+header {
+    background-color: #003F5C;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+
+header .logo img {
+    height: 100%;
+    width: 75px;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+
+header nav a:hover {
+    color: gray;
+}
+
+header .extra-nav {
+    display: flex;
+    align-items: center;
+}
+
+header .extra-nav button {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 12px;
+    transition: 0.3s linear;
+}
+
+header .extra-nav button:hover {
+    background: #fff;
+    color: #265d66;
+}
+
+header .hamburger-menu {
+    cursor: pointer;
+    display: none;
+}
+
+header .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #265d66;
+    color: white;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+header .mobile-nav.show {
+    transform: translateY(0);
+}
+
+header .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-top: 100px;
+    width: 100%;
+}
+
+header .mobile-nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+header .mobile-nav ul li a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+header .mobile-nav .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+
+/* home */
+.home{
+    padding: 15% 5%;
+}
+.home-text{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+.home-text2{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+.home-img{
+    width: 85%;
+    margin: 0% 7.5%;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+
+
+
+/* Tokenomics */
+.tokenomics{
+    padding: 5%;
+}
+.tokenomics h1{
+    font-size: 40px;
+    text-align: center;
+    color: #003F5C;
+}
+table{
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+    table-layout: fixed;
+}
+.percent{
+    color: #003F5C;
+    font-weight: bold;
+}
+td{
+    border:  2px solid black;
+    padding: 20px;
+}
+.spanning-cell{
+    column-span: 2;
+}
+
+
+
+/* About */
+#about {
+    background-color: #003F5C; /* Deep ocean color */
+    color: #F0F8FF; /* White text for contrast */
+    padding: 5%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 80%; /* Limiting width for readability */
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+#about i {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #f8d040; /* Gold color for the quote */
+    display: block;
+    margin-top: 20px;
+}
+
+
+
+/* ROADMAP*/
+.roadmap{
+    padding: 5%;
+}
+.roadmap-header{
+    font-size: 40px;
+    text-align: center;
+}
+.phase1{
+    width: 80%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 3% 5%;
+    background-color: #F0F8FF;
+    /* box-shadow: 0 4px 8px #003F5C(0, 0, 0, 0.1); */
+    border-radius: 20px;
+}
+.phase1 h1{
+    padding-bottom: 2%;
+}
+.phase2{
+    width: 80%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 3% 5%;
+    border-radius: 20px;
+}
+.phase2 h1{
+    padding-bottom: 2%;
+}
+.phase3{
+    width: 80%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 3% 5%;
+    border-radius: 20px;
+}
+.phase3 h1{
+    padding-bottom: 2%;
+}
+.phase4{
+    width: 80%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 3% 5%;
+    border-radius: 20px;
+}
+.phase4 h1{
+    padding-bottom: 2%;
+}
+.phase5{
+    width: 80%;
+    margin: 3% auto;
+    border: 2px solid black;
+    padding: 3% 5%;
+    border-radius: 20px;
+}
+.phase5 h1{
+    padding-bottom: 2%;
+}
+
+
+
+
+
+/* whitepaper */
+.whitepaper h1{
+    font-size: 35px;
+    text-align: center;
+}
+.whitepaper h2{
+    font-size: 30px;
+    text-align: center;
+}
+.whitepaper-btn{
+    width: fit-content;
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    font-size: 25px;
+    border:  1px solid black;
+}
+.whitepaper-btn:hover{
+    color: #F0F8FF;
+    background-color: #003F5C;
+    border: #003F5C;
+}
+
+
+/*  */
+.socials{
+    padding: 5%;
+}
+.social-container{
+    display: flex;
+    gap: 2em;
+    width: fit-content;
+    margin: 2% auto;
+}
+.social-text h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 1%;
+}
+.social-text h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1%;
+}
+.social-x{
+    width: 75px;
+    transform: rotate(-7deg);
+    /* margin: 10px 5px; */
+}
+.social-tg{
+    width: 70px;
+    transform: rotate(7deg);
+    /* margin: 10px 5px; */
+}
+footer{
+    background-color: #003F5C;
+    color: white;
+    /* height: 10%; */
+}
+footer p{
+    font-size: 22px;
+    /* margin-top: auto; */
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #003F5C;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    header nav,
+  header .extra-nav {
+    display: none;
+  }
+
+  header .hamburger-menu {
+    display: block;
+  }
+
+  header .mobile-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    height: 100vh;
+    background-color: #003F5C;
+    color: white;
+    z-index: 999;
+    transition: all 0.2s linear;
+  }
+
+  header .mobile-nav.show {
+    transform: translateY(0);
+    transition: all 0.2s linear;
+  }
+
+  header .mobile-nav .close {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+
+  header .mobile-nav .close svg {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+  }
+
+  header .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  header .mobile-nav ul li {
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+
+  }
+
+  header .mobile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 36px;
+    transition: 0.3s linear;
+  }
+
+  header .mobile-nav ul li .nav-link::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #fff;
+    width: 0%;
+    transition: 0.3s linear;
+  }
+
+  header .mobile-nav ul li:hover .nav-link::after {
+    width: 100%;
+    transition: 0.3s linear;
+  }
+
+
+
+  .home-text{
+    font-size: 28px;
+  }
+  .home-text2{
+    font-size: 23px;
+  }
+  .whitepaper h1{
+    font-size: 28px;
+  }
+  .whitepaper h2{
+    font-size: 23px;
+  }
+  .whitepaper-btn{
+    font-size: 25px;
+  }
+  .social-text h1{
+    font-size: 23px;
+  }
+  .social-text h2{
+    font-size: 21px;
+  }
+}
+@media (max-width:768px) {
+    .home-img{
+        margin-top: 5%;
+    }
+    table{
+        width: 90%;
+    }
+}
+@media (max-width: 576px) {
+    .contract-address h1{
+        font-size: 27px;
+    }
+    .about p{
+        font-size: 20px;
+    }
+    .roadmap h1{
+        font-size: 30px;
+    }
+    .phases h1{
+        font-size: 25px;
+    }
+    .social-text h1{
+        font-size: 30px;
+    }
+    .social-text h2{
+        font-size: 25px;
+    }
+    .social-x{
+        width: 55px;
+    }
+    .social-tg{
+        width: 50px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .home{
+        padding-top: 25%;
+    }
+    .phase1{
+        padding-left: 8%;
+        /* width: 80%; */
+    }
+    .phase1 h1{
+        font-size: 25px;
+    }
+    .phase2{
+        padding-left: 8%;
+    }
+    .phase2 h1{
+        font-size: 25px;
+    }
+    .phase3{
+        padding-left: 8%;
+    }
+    .phase3 h1{
+        font-size: 25px;
+    }
+    .phase4{
+        padding-left: 8%;
+    }
+    .phase4 h1{
+        font-size: 25px;
+    }
+    .phase5{
+        padding-left: 8%;
+    }
+    .phase5 h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 430px) {
+    header .logo a {
+        font-size: 22px;
+    }
+    .about h1{
+        font-size: 18px;
+    }
+    .about p{
+        font-size: 12px;
+    }
+    .about i{
+        font-size: 8px;
+    }
+    .tokenomics h1{
+        font-size: 28px;
+    }
+    .token1{
+        font-size: 22px;
+    }
+    .roadmap h1{
+        font-size: 25px;
+    }
+    .phases h1{
+        font-size: 24px;
+    }
+    .phases p{
+        font-size: 18px;
+    }
+    .social-text h1{
+        font-size: 22px;
+    }
+    .social-text p{
+        font-size: 22px;
+    }
+    .home{
+        padding-top: 32%;
+    }
+    .home-text{
+        font-size: 20px;
+    }
+    .home-text2{
+        font-size: 18px;
+    }
+    .percent{
+        font-size: 13px;
+    }
+    .table-text{
+        font-size: 17px;
+    }
+    .phase1{
+        margin-top: 5%;
+    }
+    .phase2{
+        margin-top: 5%;
+    }
+    .phase3{
+        margin-top: 5%;
+    }
+    .phase4{
+        margin-top: 5%;
+    }
+    .phase5{
+        margin-top: 5%;
+    }
+    .whitepaper h1{
+        font-size: 20px;
+    }
+    .whitepaper h2{
+        font-size: 16px;
+    }
+    .whitepaper-btn{
+        font-size: 18px;
+    }
+    .social-text h1{
+        font-size: 20px;
+    }
+    .social-text h2{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 18px;
+    }
+}
