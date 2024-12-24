@@ -147,6 +147,8 @@ header .mobile-nav .close {
     font-size: 40px;
     color: black;
     text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .home-text2{
     font-size: 35px;
