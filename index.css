@@ -231,6 +231,7 @@ td{
 /* ROADMAP*/
 .roadmap{
     padding: 5%;
+    font-family: 'Arial', sans-serif;
 }
 .roadmap-header{
     font-size: 40px;
@@ -556,6 +557,21 @@ a{
 
 @media (max-width: 430px) {
     header .logo a {
+        font-size: 22px;
+    }
+    .phase1 h1{
+        font-size: 22px;
+    }
+     .phase2 h1{
+        font-size: 22px;
+    }
+    .phase3 h1{
+        font-size: 22px;
+    }
+    .phase14 h1{
+        font-size: 22px;
+    }
+    .phase5 h1{
         font-size: 22px;
     }
     .about h1{
