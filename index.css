@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* font-family: 'Arial', sans-serif; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #navimg{
@@ -231,7 +232,6 @@ td{
 /* ROADMAP*/
 .roadmap{
     padding: 5%;
-    font-family: 'Arial', sans-serif;
 }
 .roadmap-header{
     font-size: 40px;
@@ -307,7 +307,7 @@ td{
     width: fit-content;
     display: flex;
     border-radius: 20px;
-    margin: 3% auto;
+    margin: auto;
     text-align: center;
     padding: 2%;
     font-size: 25px;
@@ -559,21 +559,6 @@ a{
     header .logo a {
         font-size: 22px;
     }
-    .phase1 h1{
-        font-size: 22px;
-    }
-     .phase2 h1{
-        font-size: 22px;
-    }
-    .phase3 h1{
-        font-size: 22px;
-    }
-    .phase14 h1{
-        font-size: 22px;
-    }
-    .phase5 h1{
-        font-size: 22px;
-    }
     .about h1{
         font-size: 18px;
     }
@@ -621,6 +606,18 @@ a{
     }
     .phase1{
         margin-top: 5%;
+    }
+    .phase2 h1{
+        font-size: 22px;
+    }
+    .phase3 h1{
+        font-size: 22px;
+    }
+    .phase14 h1{
+        font-size: 22px;
+    }
+    .phase5 h1{
+        font-size: 22px;
     }
     .phase2{
         margin-top: 5%;
